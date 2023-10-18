@@ -1,0 +1,67 @@
+* {
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: linear-gradient(300deg, #003cff, #eff308, #6246dd);
+    background-size: 180% 180%;
+    animation: gradient-animation 10s ease infinite;
+  }
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  #form {
+    width: 350px;
+    margin: 20vh auto 0 auto;
+    background-color:rgb(184, 201, 201);
+    padding: 30px;
+    border-radius: 5px;
+  }
+  h1 {
+    text-align: center;
+  }
+  
+  #form button {
+   
+      background-color: rgb(128, 43, 226);
+      margin-top: 10px;
+      margin-left: 80px;
+      padding:5px;
+      width:50%;
+      border-radius: 5px;
+  }
+  #form .input-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-group input {
+      padding:5px;
+      border-radius: 5px;
+      font-size:20px;
+      border:1px solid rgb(253, 85, 2);
+      margin-top:5px;
+  }
+  .input-group input:focus{
+      outline: 0;
+  }
+  .input-group .error {
+      color:rgb(255, 0, 0);
+      font-size: 16px;
+      margin-bottom:5px
+  }
+  .input-group.success input {
+      border-color:green;
+  }
+  .input-group.error input {
+      border-color:rgb(255, 0, 0);
+  }

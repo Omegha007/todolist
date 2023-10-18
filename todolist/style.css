@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(300deg, #003cff, #eff308, #6246dd);
+    background-size: 360% 360%;
+    animation: gradient-animation 15s ease infinite;
+  }
+  @keyframes gradient-animation {
+0% {
+  background-position: 0% 50%;
+}
+50% {
+  background-position: 100% 50%;
+}
+100% {
+  background-position: 0% 50%;
+}
+}
+  .container {
+    width: 40%;
+    min-height: 300px;
+    margin: 20vh auto 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(300deg, #fffb00, #0889f3, #e2e043);
+    background-size: 180% 180%;
+    animation: gradient-animation 15s ease infinite;
+  }
+  h1 {
+    margin-bottom: 20px;
+  }
+  .input-group {
+    display: flex;
+    justify-content: center;
+  }
+  .input-group input {
+    background-color: rgb(172, 207, 207);
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    border: none;
+  }
+  .input-group button{
+    background-color: #c3bbeb;
+    padding: 7px 20px 7px 20px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 10px;
+  }
+  .btn {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 10px;
+
+  }
+  #list {
+    list-style-type:none;
+    margin: 10px;
+    padding: 0;
+  }
+  #list li {
+    margin-bottom: 5px;
+  }
+
+   /* Mobile */
+@media (max-width: 320px) {
+.container {
+    width: 100%;
+    min-height: 300px;
+  } 
+  #list {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+  }
+  #list li {
+    margin:5px auto 0 15%;
+  } 
+} 
+
+/* # Tablet */
+@media only screen and (min-width:321px) and (max-width:768px ) {
+.container {
+    width: 70%;
+    min-height: 300px;
+  }
+  #list {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+  }
+  #list li {
+    margin:5px auto 0 10%;
+  } 
+  .input-group input {
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    border: none;
+    width:50%;
+    margin-bottom: 5px;
+   min-width:70%;
+  }
+
+}
+/* # Desktop */
+@media only screen and (min-width: 992px) {
+.container {
+    width: 60%;
+    min-height: 300px;
+  }
+  #list {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+  }
+  #list li {
+    margin:5px auto 0 21%;
+  } 
+
+  .input-group input {
+    
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    border: none;
+    width:50%;
+    margin-bottom: 5px;
+  }
+
+
+}
+
+@media screen and (min-width: 1280px){
+.container {
+    width: 50%;
+    min-height: 300px;
+  }
+
+}
